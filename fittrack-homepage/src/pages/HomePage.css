@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap');
+
+.homepage {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  color: #163332;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 34px;
+  background: linear-gradient(135deg, #0F5E5E, #4A90A4);
+  color: white;
+}
+
+.navbar h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 70px 20px 100px;
+  background: linear-gradient(160deg, #EAF6F4 0%, #dcefe9 100%);
+  overflow: hidden;
+}
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.blob-1 {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, #6FAE8B, transparent 70%);
+  top: -60px;
+  left: -60px;
+}
+
+.blob-2 {
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, #4A90A4, transparent 70%);
+  bottom: -100px;
+  right: -80px;
+}
+
+.hero-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: white;
+  color: #0F5E5E;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 14px -6px rgba(15, 94, 94, 0.3);
+}
+
+.hero h1 {
+  position: relative;
+  z-index: 1;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: #0F5E5E;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  position: relative;
+  z-index: 1;
+  color: #4c6664;
+  font-size: 15px;
+  max-width: 420px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.hero button {
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #0F5E5E, #4A90A4);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  cursor: pointer;
+}
+.hero button:hover { opacity: 0.92; }
+
+.hero button.btn-outline {
+  background: white;
+  color: #0F5E5E;
+  border: 1.5px solid #0F5E5E;
+}
+
+/* BMI section */
+.bmi-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 50px;
+  background: linear-gradient(160deg, #dcefe9 0%, #EAF6F4 100%);
+}
+
+.bmi-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 28px;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 30px -14px rgba(15, 94, 94, 0.25);
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+.bmi-card h3 {
+  font-family: 'Outfit', sans-serif;
+  color: #0F5E5E;
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+
+.bmi-subtext {
+  font-size: 13px;
+  color: #4c6664;
+  margin-bottom: 18px;
+}
+
+.bmi-card label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0F5E5E;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.bmi-card input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1.5px solid #d7e6e3;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.bmi-card input:focus { outline: none; border-color: #4A90A4; }
+
+.bmi-card button {
+  width: 100%;
+  background: linear-gradient(135deg, #0F5E5E, #4A90A4);
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 10px;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+.bmi-card button:hover { opacity: 0.92; }
+
+.bmi-result {
+  margin-top: 18px;
+  padding: 14px;
+  background: #EAF6F4;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bmi-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0F5E5E;
+}
+
+.bmi-category {
+  font-size: 13px;
+  color: #4c6664;
+  margin-top: 2px;
+}
+
+.bmi-error {
+  color: #c0554f;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  padding: 40px 20px 60px;
+  flex-wrap: wrap;
+  background: #EAF6F4;
+}
+
+.feature-box {
+  background: white;
+  border: none;
+  border-radius: 18px;
+  padding: 26px 22px;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0 12px 30px -14px rgba(15, 94, 94, 0.25);
+  transition: transform 0.2s ease;
+}
+.feature-box:hover { transform: translateY(-4px); }
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+.icon-1 { background: rgba(74, 144, 164, 0.12); color: #4A90A4; }
+.icon-2 { background: rgba(111, 174, 139, 0.15); color: #6FAE8B; }
+.icon-3 { background: rgba(15, 94, 94, 0.1); color: #0F5E5E; }
+
+.feature-box h3 {
+  font-family: 'Outfit', sans-serif;
+  color: #0F5E5E;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.feature-box p {
+  color: #4c6664;
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #0F5E5E;
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+}

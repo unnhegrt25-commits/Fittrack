@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap');
+
+.payment-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #EAF6F4 0%, #dcefe9 100%);
+  font-family: 'Nunito Sans', sans-serif;
+  color: #163332;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #0F5E5E;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  color: #4c6664;
+  font-size: 14.5px;
+  margin-bottom: 36px;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 26px;
+  width: 220px;
+  box-shadow: 0 12px 30px -14px rgba(15, 94, 94, 0.25);
+  position: relative;
+}
+
+.plan-card.highlight {
+  border: 2px solid #4A90A4;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4A90A4;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.plan-card h3 {
+  font-family: 'Outfit', sans-serif;
+  color: #0F5E5E;
+  margin: 6px 0 8px;
+}
+
+.plan-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0F5E5E;
+  margin-bottom: 18px;
+}
+
+.plan-price span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4c6664;
+}
+
+.plan-card button, .payment-card button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(135deg, #0F5E5E, #4A90A4);
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.plan-card button:hover, .payment-card button[type="submit"]:hover {
+  opacity: 0.92;
+}
+
+.payment-card {
+  background: white;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px -14px rgba(15, 94, 94, 0.25);
+  text-align: left;
+}
+
+.payment-card h2 {
+  font-family: 'Outfit', sans-serif;
+  color: #0F5E5E;
+  font-size: 19px;
+  text-align: center;
+  margin: 0 0 4px;
+}
+
+.payment-card .plan-price {
+  text-align: center;
+  font-size: 22px;
+}
+
+.payment-card label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0F5E5E;
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
+
+.payment-card input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1.5px solid #d7e6e3;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.payment-card input:focus {
+  outline: none;
+  border-color: #4A90A4;
+}
+
+.payment-card .row {
+  display: flex;
+  gap: 12px;
+}
+.payment-card .row > div { flex: 1; }
+
+.payment-card button.secondary {
+  width: 100%;
+  background: none;
+  color: #4A90A4;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 11.5px;
+  color: #94a8a6;
+  margin-top: 16px;
+}
+
+.success-card {
+  text-align: center;
+  max-width: 320px;
+}
+
+.success-icon {
+  width: 56px;
+  height: 56px;
+  background: #6FAE8B;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 16px;
+}
+
+.success-card h2 {
+  color: #0F5E5E;
+  margin-bottom: 8px;
+}
+
+.success-card p {
+  color: #4c6664;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.back-link {
+  color: #4A90A4;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
