@@ -20,7 +20,7 @@ const onSubmit = async (data) => {
       if (response.ok) {
        setMessage('✅ Welcome back, ' + result.name + '! Redirecting...');
 setTimeout(() => {
-  window.location.href = 'http://localhost:3001';
+  window.location.href = 'https://fittrack-homepage.onrender.com/';
 }, 1500);
       } else {
         setMessage('❌ ' + result.error);
